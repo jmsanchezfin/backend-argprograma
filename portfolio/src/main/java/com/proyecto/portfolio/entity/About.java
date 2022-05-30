@@ -1,5 +1,6 @@
 package com.proyecto.portfolio.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,6 +17,8 @@ public class About {
     private String posicion;
     private String cv_card_url;
     private String banner_url;
+    
+    @Column(length=1000)
     private String acerca_de;
 
     public About() {

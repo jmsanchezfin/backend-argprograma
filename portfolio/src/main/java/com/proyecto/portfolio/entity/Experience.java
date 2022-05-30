@@ -1,5 +1,6 @@
 package com.proyecto.portfolio.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,6 +19,8 @@ public class Experience {
     private int anio_inicio;
     private String mes_fin;
     private int anio_fin;
+    
+    @Column(length=1000)
     private String descripcion;
 
     public Experience() {
